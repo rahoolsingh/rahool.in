@@ -112,3 +112,8 @@ body {
     padding: 1px 4px;
     border-radius: 20px;
 }
+footer{
+    margin-top: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
