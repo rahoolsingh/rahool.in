@@ -1,0 +1,62 @@
+body{
+    background: rgb(0, 0, 0);
+    color: rgb(219, 197, 1);
+    margin: 50px;
+    align-content: center;
+}
+.heading{
+    text-align: center;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 0em;
+}
+.bottom{
+    position: fixed;
+    bottom: 0em;
+    left: 0em;
+    background: black;
+    width: 100vw;
+    color: black;
+    font-style: oblique;
+    font-weight: 600;
+}
+.made1{
+    position: fixed;
+    bottom: 0.3em;
+    left: 0.5em;
+    width: 100vw;
+    font-style: oblique;
+    font-weight: 600;
+}
+.made2{
+    position: fixed;
+    font-family: monospace;
+    text-align: right;
+    bottom: 0.7em;
+    right: 0.5em;
+}
+.link{
+    text-decoration: none;
+    color: rgb(219, 197, 1);
+}
+.content{
+    margin-top: 2em;
+    margin: auto;
+    width: 80vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pic{
+    position: fixed;
+    width: 50vw;
+    left: 0em;
+    bottom: 10px;
+}
+.back{
+    position: sticky;
+    margin: auto;
+    text-align: center;
+    line-height: 2em;
+}
+.content{
+    text-align: center;
+}
