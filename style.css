@@ -1,7 +1,11 @@
 body{
     background: black;
     margin: 0%;
+    padding: 0%;
     text-align: center;
+}
+.top{
+    top: 0px
 }
 .middle{
     text-align: center;
@@ -9,8 +13,7 @@ body{
     color:#00FF64;
     font-family:trebuchet ms;
     margin: auto;
-    margin-top: 40vh;
-    margin-bottom: 0px;
+    margin-top: 35vh;
 }
 .middle .hover{
     display: none;
@@ -27,7 +30,19 @@ body{
 }
 marquee{
     color: rgb(255, 255, 0);
-    width: 30vw;
+    width: 100vw;
     font-size: 20px;
-    margin: auto;
+    margin: -50px;
+}
+.block{
+    background: red;
+    color: red;
+    width: 110vw;
+    height: 10vw;
+    max-height: 3vh;
+}
+.bottom{
+    position: fixed;
+    bottom: 12vh;
+    width: 100vw;
 }
