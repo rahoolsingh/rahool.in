@@ -1,0 +1,33 @@
+body{
+    background: black;
+    margin: 0%;
+    text-align: center;
+}
+.middle{
+    text-align: center;
+    font-size: 10vw;
+    color:#00FF64;
+    font-family:trebuchet ms;
+    margin: auto;
+    margin-top: 40vh;
+    margin-bottom: 0px;
+}
+.middle .hover{
+    display: none;
+}
+
+.middle:hover .main{
+    display: none;
+}
+
+.middle:hover .hover{
+    display: inline;
+    color: white;
+    font-size: 5vw;
+}
+marquee{
+    color: rgb(255, 255, 0);
+    width: 30vw;
+    font-size: 20px;
+    margin: auto;
+}
