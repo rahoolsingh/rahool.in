@@ -42,6 +42,31 @@
                     <span class="gitName">| See Projects</span>
                 </a>
             </div>
+            
+            <div class="music">
+
+                <audio id="myAudio" autoplay volume="0.1">
+                    <source src="thunder.mp3"> </audio> <label for="play">Music : </label>
+                    <input type="radio" name="playmusic" id="play" value="on" checked
+                        onclick="playMusic(this.value);"><span>Start</span>
+                    <input type="radio" name="playmusic" id="pause" value="off"
+                        onclick="playMusic(this.value);"><span>Stop</span>
+            </div>
+        
+            <script>
+        
+                function playMusic(i) {
+                    if (i == 'on') {
+                        document.getElementById("myAudio").play();
+                        localStorage.setItem("play", "on");
+                    }
+                    if (i == 'off') {
+                        document.getElementById("myAudio").pause();
+                        localStorage.setItem("play", "off");
+                    }
+                }
+            </script>
+
         </div>
     </div>
     <div class="jh">

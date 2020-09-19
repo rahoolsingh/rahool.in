@@ -160,6 +160,10 @@ width: 100vw;
     color: rgb(0, 110, 255);
     font-weight: bold;
 }
+.music{
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
 .jh{
     width: 100vw;
     position: fixed;
