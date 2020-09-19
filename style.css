@@ -120,7 +120,7 @@ width: 100vw;
     font-size: 80%;
     box-shadow: black 2px 2px 5px;
 }
-.social a:hover{
+.social li:hover{
     background: black;
     color: wheat;
 }
