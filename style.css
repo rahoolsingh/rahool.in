@@ -123,6 +123,7 @@ width: 100vw;
 .social li:hover{
     background: black;
     color: wheat;
+    text-decoration: wheat;
 }
 .social a img{
     max-height: 17px;
