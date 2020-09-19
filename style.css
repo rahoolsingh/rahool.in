@@ -1,48 +1,165 @@
 body{
-    background: black;
     margin: 0%;
     padding: 0%;
-    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url("2.jpg");
+    background-size: auto;
+    overflow-x: hidden;
 }
-.top{
-    top: 0px
+.section1{
+width: 100vw;
 }
-.middle{
-    text-align: center;
-    font-size: 10vw;
-    color:#00FF64;
-    font-family:trebuchet ms;
+.background{
+    position: absolute;
+    z-index: -1;
+    margin: 0%;
+    top: 0%;
+    width: 100vw;
+    max-width: 1400px;
+}
+.card1{
+    /* background: rgb(56, 95, 250); */
+    background: url("back.png");
+    background-size: cover;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
     margin: auto;
-    margin-top: 35vh;
+    margin-top: 30px;
+    border-radius: 23px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.705) 4px 4px 15px;
+    width: 70vw;
+    max-width: 400px;
+    overflow: hidden;
 }
-.middle .hover{
-    display: none;
+.card1 div{
+    text-align: center;
+    line-height: 1;
 }
-
-.middle:hover .main{
-    display: none;
+.avatarDiv{
+    /* background: url("design1.png"); */
+    background-size: cover;
+    margin: -10px;
+    margin-top: -30px;
+    padding: 10px;
 }
-
-.middle:hover .hover{
-    display: inline;
+.detailDiv{
+    margin: auto;
+    margin-top: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.detailDiv div{
+    line-height: 1.4;
+    text-align: center; 
+    color: black;
+    margin: auto;
+}
+.detailDiv div li{
+    margin: 5px;
+    padding-right: 10px;
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    padding-left: 10px;
+    box-shadow: black 2px 2px 5px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.detailDiv div li:hover{
+    background: black;
     color: white;
-    font-size: 5vw;
 }
-marquee{
-    color: rgb(255, 255, 0);
+.avatar{
+    width: 20vw;
+    margin: auto;
+    max-width: 120px;
+    padding: 10px;
+    border-radius: 50%;
+    border: black 2px 2px;
+}
+.info{
+    padding-top: 17px;
+}
+.line{
+    background: blanchedalmond;
+    width: 60vw;
+    height: 2px;
+    margin: auto;
+    margin-top: 20px;
+    max-width: 370px;
+}
+.social{
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    margin: auto;
+    margin-top: 15px;
+    width: max-content;
+    vertical-align: middle;
+}
+.social h5{
+    margin-top: 0px;
+    color: blanchedalmond;
+}
+.social a{
+    margin: auto;
+    padding: 4px 10px;
+    border-radius: 20px;
+    vertical-align: middle;
+    background: blanchedalmond;
+    font-size: 80%;
+    box-shadow: black 2px 2px 5px;
+}
+.social a:hover{
+    background: black;
+    color: wheat;
+}
+.social a img{
+    max-height: 17px;
+    padding: 4px;
+    margin: auto;
+    vertical-align: middle;
+}
+.git{
+    margin: auto;
+    margin-top: 15px;
+}
+.gitLogo img{
+    max-height: 34px;
+}
+.git a span{
+    vertical-align: middle;
+    margin: auto;
+}
+.git a{
+    background: blanchedalmond;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+.gitName{
+    display: none;
+}
+.git a:hover .gitName{
+    display: inline-block;
+    vertical-align: text-top;
+    margin: auto;
+    color: rgb(0, 110, 255);
+    font-weight: bold;
+}
+.jh{
     width: 100vw;
-    font-size: 20px;
-    margin: -50px;
+    position: absolute;
+    bottom: -1px;
+    padding: 5px 0px;
+    background: rgba(0, 0, 0, 0.397);
+    overflow: hidden;
 }
-.block{
-    background: red;
-    color: red;
-    width: 110vw;
-    height: 10vw;
-    max-height: 3vh;
-}
-.bottom{
-    position: fixed;
-    bottom: 12vh;
-    width: 100vw;
+.jh h6{
+    color: wheat;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
 }

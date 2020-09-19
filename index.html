@@ -1,21 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>H4CK3D</title>
+    <link rel="stylesheet" href="style.css">
+    <title>PORTFOLIO | Rahul Kumar Singh</title>
 </head>
+
 <body>
-        <div class="top">
-            <marquee class="main"  direction="left"><div class="block"></div></marquee>
+    <div class="section1">
+        <div class="card1">
+            <div class="avatarDiv">
+                <img src="logo.jpg" class="avatar">
+            </div>
+            <div class="detailDiv">
+                <h1>Rahul Kumar Singh</h1>
+                <h4>Student | BCA | 18 Years | India</h4>
+                <div class="line"></div>
+                <div class="info">
+                    <li>Cybersecurity Enthusiast</li>
+                    <li>Technology Lover</li>
+                    <li>Self Learner</li>
+                    <li>Linux User</li>
+                    <li>Frontend</li>
+                    <li>Dreamer</li>
+                    <li>Gaming</li>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="social">
+                <h5>Follow me on social media</h5>
+                <a href="#" onclick="nolink()"><img src="icons/linkedin.png">Linkedin</a>
+                <a href="https://instagram.com/proud2indian"><img src="icons/instagram.png">Instagram</a>
+                <a href="#" onclick="nolink()"><img src="icons/twitter.png">Twitter</a>
+            </div>
+            <div class="line"></div>
+            <div class="git">
+                <a href="#" onclick="nolink()">
+                    <span class="gitLogo"><img src="icons/github.png"></span>
+                    <span class="gitName">| See Projects</span>
+                </a>
+            </div>
         </div>
-    <div class="middle">
-        <span class="main">Hacked By Gabbar</span>
-        <span class="hover">Coming soon!</span>
     </div>
-    <div class="bottom">
-        <marquee class="main"  direction="right"><div class="block"></div></marquee>
+    <div class="jh">
+        <marquee direction="" scrollamount="2">
+            <h6>सारे जहाँ से अच्छा हिन्दोस्तां हमारा, हम बुलबुलें हैं इसकी ये गुलिस्तां हमारा - MADE WITH ❤️ IN INDIA</h6>
+        </marquee>
     </div>
+    <script>
+        function nolink() {
+            if (window.confirm('COMING SOON...\nLink Not Available! \nIf you click "ok" you would be redirected to my Instagram Profile. Cancel will keep you on this website ')) {
+                window.location.href = 'https://www.instagram.com/proud2indian';
+            };
+        }
+    </script>
 </body>
+
 </html>
