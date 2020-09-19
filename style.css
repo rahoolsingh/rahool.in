@@ -19,7 +19,7 @@ width: 100vw;
 }
 .card1{
     /* background: rgb(56, 95, 250); */
-    background: url("back1.png");
+    background: #2181ff;
     background-size: cover;
     padding: 10px;
     padding-top: 30px;
@@ -124,6 +124,9 @@ width: 100vw;
     background: black;
     color: wheat;
     text-decoration: wheat;
+}
+.social li:hover a{
+    color: wheat;
 }
 .social a img{
     max-height: 17px;
