@@ -9,6 +9,16 @@ body{
 .section1{
 width: 100vw;
 }
+#bg{
+    display: none;
+    width: max-content;
+    height: 100vh;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: -2;
+    margin-top: -50px;
+}
 .background{
     position: absolute;
     z-index: -1;
@@ -54,6 +64,18 @@ width: 100vw;
 }
 .detailDiv h1{
     font-size: 28px;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 5px 20px;
+    margin: auto;
+}
+.detailDiv h4{
+    border-radius: 20px;
+    width: fit-content;
+    padding: 2px 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .detailDiv div{
     line-height: 1.4;

@@ -8,15 +8,16 @@
     <title>PORTFOLIO | Rahul Kumar Singh</title>
 </head>
 
-<body>
+<body id="body">
+    <img id="bg" src="back2.jpg">
     <div class="section1">
-        <div class="card1">
-            <div class="avatarDiv">
+        <div class="card1" id="card">
+            <div class="avatarDiv" id="avatarBack">
                 <img src="logo.jpg" class="avatar">
             </div>
             <div class="detailDiv">
-                <h1>Rahul Kumar Singh</h1>
-                <h4>Student | BCA | 18 Years | India</h4>
+                <h1 id="name">Rahul Kumar Singh</h1>
+                <h4 id="tag">Student | BCA | 18 Years | India</h4>
                 <div class="line"></div>
                 <div class="info">
                     <li>Cybersecurity Enthusiast</li>
@@ -31,38 +32,51 @@
             <div class="line"></div>
             <h5 class="follow">Follow me on social media</h5>
             <div class="social">
-                <li><a href="#" onclick="nolink()"><img src="icons/linkedin.png">Linkedin</a></li>
-                <li><a href="https://instagram.com/proud2indian"><img src="icons/instagram.png">Instagram</a></li>
-                <li><a href="#" onclick="nolink()"><img src="icons/twitter.png">Twitter</a></li>
+                <li><a href="#" onclick="nolink()"><img src="icons/linkedin.png" target="_blank">Linkedin</a></li>
+                <li><a href="https://instagram.com/proud2indian" target="_blank"><img src="icons/instagram.png">Instagram</a></li>
+                <li><a href="https://twitter.com/iam_singh_rahul" target="_blank"><img src="icons/twitter.png">Twitter</a></li>
             </div>
             <div class="line"></div>
             <div class="git">
-                <a href="#" onclick="nolink()">
+                <a href="https://github.com/iamSinghRahul" target="_blank">
                     <span class="gitLogo"><img src="icons/github.png"></span>
                     <span class="gitName">| See Projects</span>
                 </a>
             </div>
-            
+
             <div class="music">
 
-                <audio id="myAudio" autoplay volume="0.1">
-                    <source src="thunder.mp3"> </audio> <label for="play">Music : </label>
-                    <input type="radio" name="playmusic" id="play" value="on" checked
-                        onclick="playMusic(this.value);"><span>Start</span>
-                    <input type="radio" name="playmusic" id="pause" value="off"
-                        onclick="playMusic(this.value);"><span>Stop</span>
+                <audio id="myAudio" volume="1">
+                    <source src="music.mp4#t=00:01:45"> </audio> <label for="play">Music : </label>
+                <input type="radio" name="playmusic" id="play" value="on"
+                    onclick="playMusic(this.value);"><span>Start</span>
+                <input type="radio" name="playmusic" id="pause" value="off"
+                    onclick="playMusic(this.value);"><span>Stop</span>
             </div>
-        
+
             <script>
-        
+
                 function playMusic(i) {
+
                     if (i == 'on') {
                         document.getElementById("myAudio").play();
                         localStorage.setItem("play", "on");
+                        document.getElementById("card").style.background = "url('flag.jpg')";
+                        document.getElementById("avatarBack").style.background = "none";
+                        document.getElementById("name").style.background = "black";
+                        document.getElementById("tag").style.background = "black";
+                        // document.getElementById("body").style.background = "url('back2.jpg')";
+                        document.getElementById("bg").style.display = "inline";
                     }
+
                     if (i == 'off') {
                         document.getElementById("myAudio").pause();
                         localStorage.setItem("play", "off");
+                        document.getElementById("card").style.background = "#2181ff";
+                        document.getElementById("avatarBack").style.background = "none";
+                        document.getElementById("name").style.background = "none";
+                        document.getElementById("tag").style.background = "none";
+                        document.getElementById("bg").style.display = "none";
                     }
                 }
             </script>
@@ -71,14 +85,13 @@
     </div>
     <div class="jh">
         <marquee direction="" scrollamount="2">
-            <h6>सारे जहाँ से अच्छा हिन्दोस्तां हमारा, हम बुलबुलें हैं इसकी ये गुलिस्तां हमारा - MADE WITH ❤️ IN INDAI</h6>
+            <h6>सारे जहाँ से अच्छा हिन्दोस्तां हमारा, हम बुलबुलें हैं इसकी ये गुलिस्तां हमारा - MADE WITH ❤️ IN INDIA
+            </h6>
         </marquee>
     </div>
     <script>
         function nolink() {
-            if (window.confirm('COMING SOON...\nLink Not Available! \nIf you click "ok" you would be redirected to my Instagram Profile. Cancel will keep you on this website ')) {
-                window.location.href = 'https://www.instagram.com/proud2indian';
-            };
+            alert("Not Available Right Now. Coming Soon, instead contact me on Instagram.")
         }
     </script>
 </body>
