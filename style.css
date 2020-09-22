@@ -12,8 +12,9 @@ width: 100vw;
 #bg{
     display: none;
     width: max-content;
-    height: 100vh;
-    position: absolute;
+    height: 120vh;
+    position: fixed;
+    overflow: hidden;
     margin: 0;
     padding: 0;
     z-index: -2;
