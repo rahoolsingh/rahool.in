@@ -9,15 +9,21 @@
 </head>
 
 <body id="body">
-    <img id="bg" src="back2.jpg">
+    <video autoplay muted loop id="bg">
+        <source src="back.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    <!-- <video id="bg" src="back.mp4"></video> -->
     <div class="section1">
         <div class="card1" id="card">
-            <div class="avatarDiv" id="avatarBack">
-                <img src="logo.jpg" class="avatar">
-            </div>
-            <div class="detailDiv">
+            <div class="NameTag">
+                <div class="avatarDiv" id="avatarBack">
+                    <img src="logo.jpg" class="avatar">
+                </div>
                 <h1 id="name">Rahul Kumar Singh</h1>
                 <h4 id="tag">Student | BCA | 18 Years | India</h4>
+            </div>
+            <div class="detailDiv">
                 <div class="line"></div>
                 <div class="info">
                     <li>Cybersecurity Enthusiast</li>
@@ -33,8 +39,10 @@
             <h5 class="follow">Follow me on social media</h5>
             <div class="social">
                 <li><a href="#" onclick="nolink()"><img src="icons/linkedin.png" target="_blank">Linkedin</a></li>
-                <li><a href="https://instagram.com/proud2indian" target="_blank"><img src="icons/instagram.png">Instagram</a></li>
-                <li><a href="https://twitter.com/iam_singh_rahul" target="_blank"><img src="icons/twitter.png">Twitter</a></li>
+                <li><a href="https://instagram.com/proud2indian" target="_blank"><img
+                            src="icons/instagram.png">Instagram</a></li>
+                <li><a href="https://twitter.com/iam_singh_rahul" target="_blank"><img
+                            src="icons/twitter.png">Twitter</a></li>
             </div>
             <div class="line"></div>
             <div class="git">
@@ -50,7 +58,7 @@
                     <source src="music.mp3#t=00:01:45"> </audio> <label for="play">Music : </label>
                 <input type="radio" name="playmusic" id="play" value="on"
                     onclick="playMusic(this.value);"><span>Start</span>
-                <input type="radio" name="playmusic" id="pause" value="off"
+                <input type="radio" class="stop" name="playmusic" id="pause" value="off"
                     onclick="playMusic(this.value);"><span>Stop</span>
             </div>
 
@@ -62,10 +70,11 @@
                         document.getElementById("myAudio").play();
                         localStorage.setItem("play", "on");
                         document.getElementById("card").style.background = "url('flag.jpg')";
+                        document.getElementById("card").style.backgroundSize = "cover";
                         document.getElementById("avatarBack").style.background = "none";
-                        document.getElementById("name").style.background = "black";
-                        document.getElementById("tag").style.background = "black";
-                        // document.getElementById("body").style.background = "url('back2.jpg')";
+                        document.getElementById("name").style.color = "black";
+                        document.getElementById("name").style.background = "white";
+                        document.getElementById("tag").style.background = "red";
                         document.getElementById("bg").style.display = "inline";
                     }
 
@@ -73,7 +82,8 @@
                         document.getElementById("myAudio").pause();
                         localStorage.setItem("play", "off");
                         document.getElementById("card").style.background = "#2181ff";
-                        document.getElementById("avatarBack").style.background = "none";
+                        document.getElementById("avatarBack").style.background = 'url("back.png")';
+                        document.getElementById("avatarBack").style.backgroundSize = "cover";
                         document.getElementById("name").style.background = "none";
                         document.getElementById("tag").style.background = "none";
                         document.getElementById("bg").style.display = "none";
