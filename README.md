@@ -1,6 +1,6 @@
 # Profile
-https://rahulsingh.netlify.com
-#### My Official website hosted on [netlify](https://netlify.com).
+https://singhrk.com
+#### My Official website hosted with [Github Pages](https://github.com).
 ###### Netlify provides free service to host your web projects for free using GitHub Repositories.
 
 # Site Description:
