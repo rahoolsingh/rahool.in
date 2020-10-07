@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon-16x16.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>PORTFOLIO | Rahul Kumar Singh</title>
 </head>
 
@@ -55,18 +57,17 @@
             <div class="music">
 
                 <audio id="myAudio" volume="1">
-                    <source src="music.mp3#t=00:01:45"> </audio> <label for="play">Music : </label>
-                <input type="radio" name="playmusic" id="play" value="on"
-                    onclick="playMusic(this.value);"><span>Start</span>
-                <input type="radio" class="stop" name="playmusic" id="pause" value="off"
-                    onclick="playMusic(this.value);"><span>Stop</span>
+                    <source src="music.mp3#t=00:01:45"> </audio> 
+                        <label for="play">Music : </label>
+                        <i class="fa fa-volume-off" onclick="playMusic(this)"></i>
             </div>
 
             <script>
-
+                
                 function playMusic(i) {
-
-                    if (i == 'on') {
+                    if(i.classList.contains('fa-volume-off')) {
+                        i.classList.remove('fa-volume-off');
+                        i.classList.add('fa-volume-up');
                         document.getElementById("myAudio").play();
                         localStorage.setItem("play", "on");
                         document.getElementById("card").style.background = "url('flag.jpg')";
@@ -77,8 +78,9 @@
                         document.getElementById("tag").style.background = "red";
                         document.getElementById("bg").style.display = "inline";
                     }
-
-                    if (i == 'off') {
+                    else if(i.classList.contains('fa-volume-up')) {
+                        i.classList.remove('fa-volume-up');
+                        i.classList.add('fa-volume-off');
                         document.getElementById("myAudio").pause();
                         localStorage.setItem("play", "off");
                         document.getElementById("card").style.background = "#2181ff";
@@ -89,6 +91,29 @@
                         document.getElementById("tag").style.background = "none";
                         document.getElementById("bg").style.display = "none";
                     }
+                    // if (i == 'on') {
+                    //     document.getElementById("myAudio").play();
+                    //     localStorage.setItem("play", "on");
+                    //     document.getElementById("card").style.background = "url('flag.jpg')";
+                    //     document.getElementById("card").style.backgroundSize = "cover";
+                    //     document.getElementById("avatarBack").style.background = "none";
+                    //     document.getElementById("name").style.color = "black";
+                    //     document.getElementById("name").style.background = "white";
+                    //     document.getElementById("tag").style.background = "red";
+                    //     document.getElementById("bg").style.display = "inline";
+                    // }
+
+                    // if (i == 'off') {
+                    //     document.getElementById("myAudio").pause();
+                    //     localStorage.setItem("play", "off");
+                    //     document.getElementById("card").style.background = "#2181ff";
+                    //     document.getElementById("avatarBack").style.background = 'url("back.png")';
+                    //     document.getElementById("avatarBack").style.backgroundSize = "cover";
+                    //     document.getElementById("name").style.background = "none";
+                    //     document.getElementById("name").style.color = "white";
+                    //     document.getElementById("tag").style.background = "none";
+                    //     document.getElementById("bg").style.display = "none";
+                    // }
                 }
             </script>
 
