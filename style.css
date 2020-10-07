@@ -110,6 +110,7 @@ width: 100vw;
 .detailDiv div li:hover{
     background: black;
     color: white;
+    cursor: pointer;
 }
 .avatar{
     width: 20vw;
@@ -149,6 +150,7 @@ width: 100vw;
     margin: auto;
     padding: 4px 10px;
     display: inline-block;
+    cursor: pointer;
     border-radius: 20px;
     margin-top: 15px;
     width: fit-content;
