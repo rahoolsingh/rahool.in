@@ -5,6 +5,34 @@ body{
     background: url("2.jpg");
     background-size: auto;
     overflow-x: hidden;
+    background-position: center;
+}
+.musicCon{
+    position: fixed;
+    z-index: 1;
+    height: 120vh;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 100px;
+    width: 100vw;
+    margin-top: -30px;
+    background: wheat;
+}
+.musicCon img{
+    max-width: 200px;
+    width: 60vw;
+}
+.musicCon button{
+    width: 100px;
+    height: 30px;
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+.musicCon button:hover{
+    background: none;
+    border: 1px solid black;
+    color: black;
 }
 .section1{
 width: 100vw;
@@ -30,6 +58,7 @@ width: 100vw;
     /* background: rgb(56, 95, 250); */
     background: #2181ff;
     background-size: cover;
+    background-position: center;
     padding: 10px;
     padding-top: 30px;
     padding-bottom: 40px;
@@ -43,7 +72,9 @@ width: 100vw;
     max-width: 500px;
     margin-bottom: 60px;
     overflow: hidden;
+    opacity: 90%;
 }
+
 .card1 div{
     text-align: center;
     line-height: 1;
