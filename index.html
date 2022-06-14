@@ -1,166 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<title>Site Maintenance</title>
+<link
+  href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+  rel="stylesheet"
+/>
+<style>
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    text-align: center;
+    padding: 0;
+    background: #d6433b;
+    color: #fff;
+    font-family: Open Sans;
+  }
+  h1 {
+    font-size: 50px;
+    font-weight: 100;
+    text-align: center;
+  }
+  body {
+    font-family: Open Sans;
+    font-weight: 100;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  article {
+    display: block;
+    width: 700px;
+    padding: 50px;
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  a:hover {
+      text-decoration: underline;
+  }
+  svg {
+    width: 75px;
+    margin-top: 1em;
+  }
+</style>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon-16x16.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>PORTFOLIO | Rahul Kumar Singh</title>
-</head>
-
-<body id="body" onload="myalert()">
-
-    <div class="musicCon" id="musicCon">
-        <!-- Music confirm -->
-        <img src="headphone.png">
-        <h2>Do you want to enjoy the music?</h2>
-        <button onclick="yesMusic()">Yes</button>
-        <button onclick="NoMusic()">No</button>
-    </div>
-
-    <video autoplay muted loop id="bg">
-        <source src="back.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
-    <!-- <video id="bg" src="back.mp4"></video> -->
-    <div class="section1">
-        <div class="card1" id="card">
-            <div class="NameTag">
-                <div class="avatarDiv" id="avatarBack">
-                    <img src="logo.jpg" class="avatar">
-                </div>
-                <h1 id="name">Rahul Kumar Singh</h1>
-                <h4 id="tag">Student | BCA | 18 Years | India</h4>
-            </div>
-            <div class="detailDiv">
-                <div class="line"></div>
-                <div class="info">
-                    <li>Cybersecurity Enthusiast</li>
-                    <li>Technology Lover</li>
-                    <li>Self Learner</li>
-                    <li>Diving Into Linux</li>
-                    <li>Frontend</li>
-                    <li>Dreamer</li>
-                    <li>Gamer</li>
-                </div>
-            </div>
-            <div class="line"></div>
-            <h5 class="follow">Follow me on social media</h5>
-            <div class="social">
-                <a href="https://www.linkedin.com/in/rahoolsingh/">
-                    <li><img src="icons/linkedin.png" target="_blank">Linkedin</li>
-                </a>
-                <a href="https://instagram.com/proud2indian" target="_blank">
-                    <li><img src="icons/instagram.png">Instagram</li>
-                </a>
-                <a href="https://twitter.com/rahoolsinghz" target="_blank">
-                    <li><img src="icons/twitter.png">Twitter</li>
-                </a>
-            </div>
-            <div class="line"></div>
-            <div class="git">
-                <a href="https://github.com/rahoolsingh" target="_blank">
-                    <span class="gitLogo"><img src="icons/github.png"></span>
-                    <span class="gitName">| See Projects</span>
-                </a>
-            </div>
-
-            <div class="music">
-
-                <audio id="myAudio" volume="1">
-                    <source src="music.mp3#t=00:00:15">
-                </audio>
-                <label for="play">Music : </label>
-                <i class="fa fa-volume-off" id="mymusic" onclick="playMusic(this)"></i>
-            </div>
-
-            <script>
-
-                function yesMusic() {
-                    document.getElementById("musicCon").style.display = "none";
-                    document.getElementById("mymusic").click();
-                    // else {
-                    //     //some code
-                    // }
-                }
-                function NoMusic() {
-                    document.getElementById("musicCon").style.display = "none";
-                    // else {
-                    //     //some code
-                    // }
-                }
-
-
-                function playMusic(i) {
-                    if (i.classList.contains('fa-volume-off')) {
-                        i.classList.remove('fa-volume-off');
-                        i.classList.add('fa-volume-up');
-                        document.getElementById("myAudio").play();
-                        localStorage.setItem("play", "on");
-                        document.getElementById("card").style.background = "url('retro.png')";
-                        document.getElementById("card").style.position = "center";
-
-                        document.getElementById("card").style.backgroundSize = "cover";
-                        document.getElementById("avatarBack").style.background = "none";
-                        document.getElementById("name").style.color = "white";
-                        document.getElementById("name").style.background = "";
-                        document.getElementById("tag").style.background = "white";
-                        document.getElementById("tag").style.color = "black";
-                        document.getElementById("bg").style.display = "inline";
-                    }
-                    else if (i.classList.contains('fa-volume-up')) {
-                        i.classList.remove('fa-volume-up');
-                        i.classList.add('fa-volume-off');
-                        document.getElementById("myAudio").pause();
-                        localStorage.setItem("play", "off");
-                        document.getElementById("card").style.background = "#2181ff";
-                        document.getElementById("avatarBack").style.background = 'url("back.png")';
-                        document.getElementById("avatarBack").style.backgroundSize = "cover";
-                        document.getElementById("name").style.background = "none";
-                        document.getElementById("name").style.color = "white";
-                        document.getElementById("tag").style.background = "none";
-                        document.getElementById("bg").style.display = "none";
-                    }
-                    // if (i == 'on') {
-                    //     document.getElementById("myAudio").play();
-                    //     localStorage.setItem("play", "on");
-                    //     document.getElementById("card").style.background = "url('flag.jpg')";
-                    //     document.getElementById("card").style.backgroundSize = "cover";
-                    //     document.getElementById("avatarBack").style.background = "none";
-                    //     document.getElementById("name").style.color = "black";
-                    //     document.getElementById("name").style.background = "white";
-                    //     document.getElementById("tag").style.background = "red";
-                    //     document.getElementById("bg").style.display = "inline";
-                    // }
-
-                    // if (i == 'off') {
-                    //     document.getElementById("myAudio").pause();
-                    //     localStorage.setItem("play", "off");
-                    //     document.getElementById("card").style.background = "#2181ff";
-                    //     document.getElementById("avatarBack").style.background = 'url("back.png")';
-                    //     document.getElementById("avatarBack").style.backgroundSize = "cover";
-                    //     document.getElementById("name").style.background = "none";
-                    //     document.getElementById("name").style.color = "white";
-                    //     document.getElementById("tag").style.background = "none";
-                    //     document.getElementById("bg").style.display = "none";
-                    // }
-                }
-            </script>
-        </div>
-    </div>
-    <!-- <div class="jh">
-        <marquee direction="" scrollamount="2">
-            <h6>सारे जहाँ से अच्छा हिन्दोस्तां हमारा, हम बुलबुलें हैं इसकी ये गुलिस्तां हमारा - MADE WITH ❤️ IN INDIA
-            </h6>
-        </marquee>
-    </div> -->
-    <script>
-        function nolink() {
-            alert("Not Available Right Now. Coming Soon, instead contact me on Instagram.")
+<article>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202.24 202.24">
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
         }
-    </script>
-</body>
-
-</html>
+      </style>
+    </defs>
+    <title>Asset 3</title>
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Capa_1" data-name="Capa 1">
+        <path
+          class="cls-1"
+          d="M101.12,0A101.12,101.12,0,1,0,202.24,101.12,101.12,101.12,0,0,0,101.12,0ZM159,148.76H43.28a11.57,11.57,0,0,1-10-17.34L91.09,31.16a11.57,11.57,0,0,1,20.06,0L169,131.43a11.57,11.57,0,0,1-10,17.34Z"
+        />
+        <path
+          class="cls-1"
+          d="M101.12,36.93h0L43.27,137.21H159L101.13,36.94Zm0,88.7a7.71,7.71,0,1,1,7.71-7.71A7.71,7.71,0,0,1,101.12,125.63Zm7.71-50.13a7.56,7.56,0,0,1-.11,1.3l-3.8,22.49a3.86,3.86,0,0,1-7.61,0l-3.8-22.49a8,8,0,0,1-.11-1.3,7.71,7.71,0,1,1,15.43,0Z"
+        />
+      </g>
+    </g>
+  </svg>
+  <h1>We&rsquo;ll be back soon!</h1>
+  <div>
+    <p>
+      Sorry for the inconvenience. We&rsquo;re performing some maintenance at
+      the moment. If you need to you can always follow me on
+      <a href="https://twitter.com/rahoolsinghz">Twitter</a>, otherwise
+      we&rsquo;ll be back up shortly!
+    </p>
+    <p>&mdash; Rahul Kumar Singh</p>
+  </div>
+</article>
