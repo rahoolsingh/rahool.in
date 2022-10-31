@@ -7,5 +7,4 @@ www.rahool.in
 	
 # Credit:
 ## Rahul Kumar Singh
-CodePen.io
 #### Website: [Click Here](https://rahool.in) | Instagram:  [Follow Me](https://instagram.com/proud2indian) | GitHub: [Visit Site](https://github.com/rahoolsingh/)
