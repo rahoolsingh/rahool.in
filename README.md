@@ -1,5 +1,5 @@
 # Profile
-https://singhrk.com
+www.rahool.in
 #### My Official website hosted with [Github Pages](https://github.com).
 ###### Netlify provides free service to host your web projects for free using GitHub Repositories.
 
